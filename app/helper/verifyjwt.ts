@@ -4,6 +4,7 @@ import 'dotenv/config'
 
 export async function verifyTokens(token: string): Promise<boolean> {
     const secretKey = process.env.AUTHSECRETE
+    if(!secretKey) console.log('secrete key not found');
     const verifyToken = new TextEncoder().encode(secretKey);
 
     try {
