@@ -8,7 +8,7 @@ export const POST = async (req: Request) => {
     try {
         const { username, password } = await req.json();
 
-        // return NextResponse.json({username,password})
+        return NextResponse.json({username,password})
 
         const auth = await authUser(username, String(password))
 
