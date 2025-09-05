@@ -19,4 +19,5 @@ export const POST = async (req: Request) => {
         return serverResponse
     } catch (e: any) {
         return NextResponse.json({ msg: e.message }, { status: 500 })
-     
+    }
+} 
