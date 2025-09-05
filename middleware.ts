@@ -9,12 +9,12 @@ export async function middleware(req: NextRequest) {
     const protectedRoutes = ['/admin', '/form'];
 
     // 🌍 Public routes (skip protection)
-    const publicRoutes = ['/'];
+    // const publicRoutes = ['/'];
 
-    // Skip middleware for public routes
-    if (publicRoutes.some((route) => pathname.startsWith(route))) {
-        return NextResponse.next();
-    }
+    // // Skip middleware for public routes
+    // if (publicRoutes.some((route) => pathname.startsWith(route))) {
+    //     return NextResponse.next();
+    // }
 
     // Check if this is a protected route
     const isProtected = protectedRoutes.some((route) => pathname.startsWith(route));
