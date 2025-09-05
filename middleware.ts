@@ -11,14 +11,14 @@ export default async function middleware(req: NextRequest) {
     // 🌍 Public routes (skip protection)
     const publicRoutes = ['/'];
 
-    if (publicRoutes.some((route) => pathname.startsWith(route))) {
-        return NextResponse.next();
-    }
-
-    // Skip middleware for public routes
-    // if (publicRoutes.includes(pathname)) {
+    // if (publicRoutes.some((route) => pathname.startsWith(route))) {
     //     return NextResponse.next();
     // }
+
+    // Skip middleware for public routes
+    if (publicRoutes.includes(pathname)) {
+        return NextResponse.next();
+    }
 
     // Check if this is a protected route
     const isProtected = protectedRoutes.some((route) => pathname.startsWith(route));
