@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyTokens } from './app/helper/verifyjwt';
 
 
-export async function middleware(req: NextRequest) {
+export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
     // 🛑 Routes to protect (you can customize)
     const protectedRoutes = ['/admin', '/form'];

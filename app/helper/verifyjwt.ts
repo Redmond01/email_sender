@@ -1,5 +1,4 @@
 import { jwtVerify } from "jose";
-import 'dotenv/config'
 
 
 export async function verifyTokens(token: string): Promise<boolean> {
