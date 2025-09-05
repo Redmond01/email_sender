@@ -5,17 +5,20 @@ import { verifyTokens } from './app/helper/verifyjwt';
 
 export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
-    console.log('middleware ran here', pathname, req.nextUrl)
     // 🛑 Routes to protect (you can customize)
     const protectedRoutes = ['/admin', '/form'];
 
     // 🌍 Public routes (skip protection)
     const publicRoutes = ['/'];
 
-    // Skip middleware for public routes
     if (publicRoutes.some((route) => pathname.startsWith(route))) {
         return NextResponse.next();
     }
+
+    // Skip middleware for public routes
+    // if (publicRoutes.includes(pathname)) {
+    //     return NextResponse.next();
+    // }
 
     // Check if this is a protected route
     const isProtected = protectedRoutes.some((route) => pathname.startsWith(route));
@@ -25,6 +28,7 @@ export default async function middleware(req: NextRequest) {
 
     // Get accessToken from cookies
     const token = req.cookies.get('accessToken')?.value;
+
 
     // If no token → redirect to home
     if (!token) {
@@ -38,6 +42,10 @@ export default async function middleware(req: NextRequest) {
         return NextResponse.redirect(new URL('/', req.url));
     }
 
+    if (token && isValid) {
+        console.log(true)
+    }
+
     // ✅ All good — proceed
     return NextResponse.next();
 }
@@ -47,17 +55,3 @@ export const config = {
     matcher: ['/form/:path*', '/admin/:path*'],
 };
 
-
-
-// import { NextResponse } from 'next/server'
-// import type { NextRequest } from 'next/server'
- 
-// // This function can be marked `async` if using `await` inside
-// export function middleware(request: NextRequest) {
-//   return NextResponse.redirect(new URL('/', request.url))
-// }
- 
-// // See "Matching Paths" below to learn more
-// export const config = {
-//   matcher: '/form/:path*',
-// }
