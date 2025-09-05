@@ -1,0 +1,23 @@
+
+Hi {{FirstName}},
+
+I’m {{Your Name}}, a solo developer who builds tools for small teams that are tired of juggling jobs in spreadsheets or sticky notes.
+
+I’ve been following how folks like you — running real businesses on the ground (like construction, consulting, trades) — handle client scheduling, and I noticed a pattern: great work, but the system often holds things back.
+
+So I built a simple booking & job tracking tool that helps service-based teams:
+
+✅ Auto-schedule jobs without back-and-forth
+✅ Sync with calendars & send reminders
+✅ Cut no-shows and double-booking
+✅ Works on mobile (no laptop needed)
+It’s already helping a few small crews stay organized with less stress — and it’s built by someone who gets the hustle, not a corporate dev team.
+
+If that sounds like something you could use, I’d love to show you how it works in a quick 10-minute call — no pitch, just a demo and your honest thoughts.
+
+Would next [Tuesday/Thursday] work for a quick chat?
+
+Best,
+{{Your Full Name}}
+Solo Developer 
+P.S. Totally cool if it’s not the right time — just wanted to share something real that’s helping teams like yours.

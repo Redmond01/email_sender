@@ -1,0 +1,31 @@
+create a logic async function that will do the following,
+1. call my database using prismaClient, and calling my db model "recipient",
+2. import the fs module, and create a file called "emaildata.json",
+3. and write the file created with the data called from db.
+4. the condition to request for the emails is the 'noOfEmailSent' property, make sure that the !== 8
+
+create an async function that does the following
+1. use the 'updateRecipient' file in the 'lib' folder
+2. go t
+
+
+
+
+
+1.call prisma client
+2.name the function as "multipleEmail"
+3.the function will collect an object with the type interface of (interface userRecipient {
+    id?: number,
+    name: string,
+    email: string,
+    companyName: string,
+    noOfEmailSent: number
+    userStatus: boolean,
+    industry: string,
+    emailValid: boolean
+)
+
+function to collect csv and parse it and create an object with it
+function to collect that object and add to db
+update the 'noOfEmailSent' property
+create a json file using fs and store temporarily there
