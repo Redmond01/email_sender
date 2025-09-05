@@ -5,7 +5,7 @@ import { verifyTokens } from './app/helper/verifyjwt';
 
 export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
-    console.log('middleware ran here')
+    console.log('middleware ran here', pathname)
     // 🛑 Routes to protect (you can customize)
     const protectedRoutes = ['/admin', '/form'];
 
