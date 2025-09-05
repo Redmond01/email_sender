@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
-    // console.log('Middleware running for:', req.nextUrl.pathname);
+    console.log('Middleware running for:', req.nextUrl.pathname);
     // 🛑 Routes to protect (you can customize)
     // const protectedRoutes = ['/admin', '/form'];
 
