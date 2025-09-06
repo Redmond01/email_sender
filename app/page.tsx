@@ -1,50 +1,68 @@
 "use client"
 import React, { useEffect, useState } from 'react';
+import { redirect, RedirectType, useRouter } from 'next/navigation';
+import { validateObject } from './helper/checkValue';
 import axios from 'axios';
 
 interface LoginFormData {
-  username: string;
-  password: string;
+  username: string, password: string
 }
 
-interface DomainName{
-  host:string
-}
 
 const LoginForm: React.FC = () => {
+  const reRoute = useRouter()
+
+  //handles reroute
+  const handleReroute = () => {
+    reRoute.push('/form')
+  }
   const [formData, setFormData] = useState<LoginFormData>({
     username: '',
     password: ''
   });
-  const [domainHostName, setDomainHostName] = useState<DomainName>()
 
-  useEffect(()=>{
-    console.log(window.location)
-    setDomainHostName((old):DomainName => {
-      return {...old, host:window.location.host}
-    })
-    console.log(domainHostName)
-  },[])
+  useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_LOGINROUTE)
+
+  }, [])
+
 
   const [showForm, setShowForm] = useState(true);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
 
+  //reload the page
+  const reloadPage = () => {
+    window.location.reload();
+  }
+
+  //submit credentials to ther server 
   const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
-    await axios({
-      url: "http://localhost:5000",
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      data: JSON.stringify(formData)
-    })
-    // console.log('Login submitted:', formData);
-    // console.log(e)
+    try {
+      const { password, username } = formData
+      if (password && username !== undefined || null || '') {
+        const makeServerRequest = await axios({
+          url: `${process.env.NEXT_PUBLIC_LOGINROUTE}/api/login`,
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          data: JSON.stringify(formData)
+        })
+        console.log(makeServerRequest)
+        if (makeServerRequest.status === 200) {
+          handleReroute; // ✅ redirect to next route
+        } else {
+          alert("Login failed");
+          setTimeout(reloadPage, 3000)
+        }
+      } else {
+        alert('invalid credntials page reloads in 3s')
+        setTimeout(reloadPage, 3000)
+      }
+    } catch (e: any) {
+      console.log(e)
+    }
   };
 
   const handleCancel = () => {
@@ -101,7 +119,9 @@ const LoginForm: React.FC = () => {
                   type="text"
                   name="username"
                   value={formData.username}
-                  onChange={handleInputChange}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    setFormData((old) => ({ ...old, username: e.target.value }))
+                  }}
                   placeholder="Enter username"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
                   required
@@ -116,7 +136,9 @@ const LoginForm: React.FC = () => {
                   type="password"
                   name="password"
                   value={formData.password}
-                  onChange={handleInputChange}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    setFormData((old) => ({ ...old, password: e.target.value }))
+                  }}
                   placeholder="Enter password"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
                   required

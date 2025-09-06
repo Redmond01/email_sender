@@ -1,9 +1,6 @@
-import 'dotenv/config'
 
 (async () => {
-    const secrets = process.env.AUTHSECRETE
-    const secret = new TextEncoder().encode(secrets);
+console.log(`hello my name is ${name}`);
 
-    console.log(secret)
 
 })()
