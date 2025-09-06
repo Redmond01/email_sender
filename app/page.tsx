@@ -16,7 +16,7 @@ const LoginForm: React.FC = () => {
     username: '',
     password: ''
   });
-  const [domainHostName, setDomainHostName] = useState<DomainName>({host:''})
+  const [domainHostName, setDomainHostName] = useState<DomainName>()
 
   useEffect(()=>{
     console.log(window.location)
