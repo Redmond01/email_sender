@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 interface LoginFormData {
@@ -7,11 +7,24 @@ interface LoginFormData {
   password: string;
 }
 
+interface DomainName{
+  host:string
+}
+
 const LoginForm: React.FC = () => {
   const [formData, setFormData] = useState<LoginFormData>({
     username: '',
     password: ''
   });
+  const [domainHostName, setDomainHostName] = useState<DomainName>({host:''})
+
+  useEffect(()=>{
+    console.log(window.location)
+    setDomainHostName((old):DomainName => {
+      return {...old, host:window.location.host}
+    })
+    console.log(domainHostName)
+  },[])
 
   const [showForm, setShowForm] = useState(true);
 
