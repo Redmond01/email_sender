@@ -1,9 +1,4 @@
 import { jwtVerify, SignJWT } from 'jose';
-import 'dotenv/config'
-
-/**
- * Verifies the access token and generates a new refresh token
- */
 
 
 export async function generateRefreshToken(accessToken: string) {
@@ -26,3 +21,28 @@ export async function generateRefreshToken(accessToken: string) {
     }
 }
 
+export async function signUserId(id: number) {
+    // Secret key (in production, use a strong secret or a private key)
+    const secret = process.env.AUTHSECRETE
+    const secretKey = new TextEncoder().encode(secret);
+    // Create and sign the JWT
+    const token = await new SignJWT({ id }) // payload
+        .setProtectedHeader({ alg: 'HS256' })
+        .setIssuedAt()
+        .setExpirationTime('1 day') // expires in 2 hours
+        .sign(secretKey);
+
+    return token;
+}
+
+export async function verifyTokens(token: string): Promise<boolean> {
+    const secretKey = process.env.AUTHSECRETE
+    const verifyToken = new TextEncoder().encode(secretKey);
+
+    try {
+        await jwtVerify(token, verifyToken);
+        return true;
+    } catch {
+        return false; // Token is invalid or expired
+    }
+}

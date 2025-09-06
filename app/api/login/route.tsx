@@ -7,14 +7,13 @@ export const POST = async (req: Request) => {
     try {
         const { username, password } = await req.json();
 
-        return NextResponse.json({username,password},{status:200})
-        // const auth = await authUser(username, String(password))
+        const auth = await authUser(username, String(password))
 
-        // const serverResponse = NextResponse.json({ message: auth }, { status: auth.status })
-        // serverResponse.cookies.set('accessToken', auth.data?.accestoken, { httpOnly: true, sameSite: true, maxAge: 60 * 60 * 2 })
-        // serverResponse.cookies.set('refreshToken', auth.data?.refreshtoken, { httpOnly: true, sameSite: true, maxAge: 60 * 60 * 24 * 7 })
+        const serverResponse = NextResponse.json({ message: auth.message }, { status: auth.status })
+        serverResponse.cookies.set('accessToken', auth.data?.accestoken, { httpOnly: true, secure: false, sameSite: 'lax', maxAge: 60 * 60 * 2 })
+        serverResponse.cookies.set('refreshToken', auth.data?.refreshtoken, { httpOnly: true, secure: false, sameSite: 'lax', maxAge: 60 * 60 * 24 * 7 })
 
-        // return serverResponse
+        return serverResponse
     } catch (e: any) {
         return NextResponse.json({ msg: e.message }, { status: 500 })
     }

@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { redirect, RedirectType, useRouter } from 'next/navigation';
-import { validateObject } from './helper/checkValue';
 import axios from 'axios';
 
 interface LoginFormData {
@@ -21,10 +20,10 @@ const LoginForm: React.FC = () => {
     password: ''
   });
 
-  useEffect(() => {
-    console.log(process.env.NEXT_PUBLIC_LOGINROUTE)
+  // useEffect(() => {
+  //   console.log(process.env.NEXT_PUBLIC_LOGINROUTE)
 
-  }, [])
+  // }, [])
 
 
   const [showForm, setShowForm] = useState(true);
@@ -40,26 +39,22 @@ const LoginForm: React.FC = () => {
     e.preventDefault();
     try {
       const { password, username } = formData
-      if (password && username !== undefined || null || '') {
+      if (username.trim() && password.trim()) {
         const makeServerRequest = await axios({
           url: `${process.env.NEXT_PUBLIC_LOGINROUTE}/api/login`,
           method: "POST",
           headers: {
             'Content-Type': 'application/json'
           },
-          data: JSON.stringify(formData)
+          data: JSON.stringify(formData),
+          withCredentials: true
         })
-        console.log(makeServerRequest)
-        if (makeServerRequest.status === 200) {
-          handleReroute; // ✅ redirect to next route
-        } else {
-          alert("Login failed");
-          setTimeout(reloadPage, 3000)
-        }
+        if (makeServerRequest.status === 200) reRoute.push('/form')
       } else {
         alert('invalid credntials page reloads in 3s')
         setTimeout(reloadPage, 3000)
       }
+
     } catch (e: any) {
       console.log(e)
     }

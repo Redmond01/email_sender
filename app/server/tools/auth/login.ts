@@ -2,8 +2,8 @@
 import { compare } from '@node-rs/bcrypt';
 import { prismadb } from '../../lib/dbconnection';
 import type { ServerResponse } from '../../../typemodule'
-import { signUserId } from '../../../helper/signjwt';
-import { generateRefreshToken } from '../../../helper/refreshjwt';
+import { signUserId } from '../../../helper/jwt';
+import { generateRefreshToken } from '../../../helper/jwt';
 
 
 export const authUser = async (username: string, userPpassword: string): Promise<ServerResponse> => {

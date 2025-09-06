@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server';
 
-import { createRecipient } from '@/app/tools/email/main'
+import { createRecipient } from '../../server/tools/email/main'
 
 export const POST = async (req: Request) => {
     try {

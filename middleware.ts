@@ -1,6 +1,6 @@
 // middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyTokens } from './app/helper/verifyjwt';
+import { verifyTokens } from './app/helper/jwt';
 
 
 export default async function middleware(req: NextRequest) {
