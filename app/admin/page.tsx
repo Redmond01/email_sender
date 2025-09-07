@@ -43,7 +43,9 @@ const App: React.FC = () => {
 
                     'Content-Type': 'application/json',
                 },
-                data: JSON.stringify(newData.message),
+                data: JSON.stringify(newData.message)
+                
+                
             });
 
             console.log(response)

@@ -3,6 +3,7 @@ import { hash } from '@node-rs/bcrypt';
 import type { ServerResponse } from '../../../typemodule.js';
 import {prismadb} from '../../lib/dbconnection';
 import 'dotenv/config'
+import {} from 'node:crypto'
 
 export const signup = async (username: string, password: string, uniqueCode: string) => {
     const myEnvAuth = process.env.UNIQUECODE;

@@ -1,6 +1,8 @@
 // middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyTokens } from './app/helper/jwt';
+import axios from 'axios';
+import type { serverRequestConfig } from './app/typemodule';
 
 
 export default async function middleware(req: NextRequest) {
@@ -28,6 +30,32 @@ export default async function middleware(req: NextRequest) {
 
     // Get accessToken from cookies
     const token = req.cookies.get('accessToken')?.value;
+    const fallbackToen = req.cookies.get('refreshToken')?.value
+
+
+    //check for token and redirect to refresh route for token update
+    if (!token && !fallbackToen) {
+        return NextResponse.redirect(new URL('/', req.url))
+    } else if (!token && fallbackToen) {
+        const refreshRoute = process.env.NEXT_PUBLIC_LOGINROUTE;
+
+        try {
+            const request: serverRequestConfig = {
+                data: fallbackToen,
+                headers: { 'Content-Type': 'application/json' },
+                method: 'POST',
+                withCredentials: true,
+                url: `${refreshRoute}/refresh`
+            }
+            const updateAccessToken = await axios(request);
+            if (updateAccessToken.status === 400) {
+                return NextResponse.redirect(new URL('/', req.url));
+            }
+        } catch (e: any) {
+            return e
+        }
+    }
+
 
 
     // If no token → redirect to home
