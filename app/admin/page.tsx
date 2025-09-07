@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { validateObject } from '../helper/checkValue'
 import axios from 'axios'
+import { autoRefreshRequest } from '../utils/axios';
 
 // Main App component
 const App: React.FC = () => {
@@ -36,7 +37,7 @@ const App: React.FC = () => {
                 return
             }
 
-            const response = await axios('http://localhost:5000/api/signup', {
+            const response = await axios(`${process.env.NEXT_PUBLIC_LOGINROUTE}/api/signup`, {
                 method: 'POST',
                 headers: {
 
