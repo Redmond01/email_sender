@@ -10,9 +10,9 @@ export interface userRecipient {
 }
 
 export type ServerResponse = {
-    data?: Record<string , any>,
+    data?: Record<string, any>,
     message: string,
-    status: 200 | 400 | 500,
+    status: 200 | 400 | 401 | 500,
     inserted?: number,
     skipped?: number
 }
@@ -22,10 +22,10 @@ export type SmtpSchema = {
     password: string
 }
 
-export type serverRequestConfig={
-    method:string,
-    headers:{[key:string]:string},
-    data:string,
-    withCredentials?:boolean
-    url:string
+export type serverRequestConfig = {
+    method: string,
+    headers: { [key: string]: string },
+    data: string,
+    withCredentials?: boolean
+    url: string
 }
