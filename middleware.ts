@@ -13,9 +13,6 @@ export default async function middleware(req: NextRequest) {
     // 🌍 Public routes (skip protection)
     const publicRoutes = ['/'];
 
-    // if (publicRoutes.some((route) => pathname.startsWith(route))) {
-    //     return NextResponse.next();
-    // }
 
     // Skip middleware for public routes
     if (publicRoutes.includes(pathname)) {
@@ -30,52 +27,47 @@ export default async function middleware(req: NextRequest) {
 
     // Get accessToken from cookies
     const token = req.cookies.get('accessToken')?.value;
-    const fallbackToen = req.cookies.get('refreshToken')?.value
+    const fallbackToken = req.cookies.get('refreshToken')?.value
 
 
-    //check for token and redirect to refresh route for token update
-    if (!token && !fallbackToen) {
+    // check for token and redirect to refresh route for token update
+    if (!token && !fallbackToken) {
         return NextResponse.redirect(new URL('/', req.url))
-    } else if (!token && fallbackToen) {
+    }
+
+    if (token) {
+        const isValid = await verifyAccessTokens(token);
+        if (isValid) return NextResponse.next()
+    }
+
+    if (fallbackToken) {
         const refreshRoute = process.env.NEXT_PUBLIC_LOGINROUTE;
 
         try {
             const request: serverRequestConfig = {
-                data: fallbackToen,
+                data: fallbackToken,
                 headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
                 withCredentials: true,
                 url: `${refreshRoute}/refresh`
             }
             const updateAccessToken = await axios(request);
+            console.log('request made')
             if (updateAccessToken.status === 400) {
                 return NextResponse.redirect(new URL('/', req.url));
             }
+            return NextResponse.next()
         } catch (e: any) {
-            return e
+            console.log(e.message)
+            return NextResponse.redirect(new URL('/', req.url))
         }
     }
 
+    console.log('first')
 
+    // final fallback
+    return NextResponse.redirect(new URL("/", req.url));
 
-    // If no token → redirect to home
-    if (!token) {
-        return NextResponse.redirect(new URL('/', req.url));
-    }
-
-    // Validate JWT signature and expiration
-    const isValid = await verifyAccessTokens(token);
-    if (!isValid) {
-        // Token is expired or tampered
-        return NextResponse.redirect(new URL('/', req.url));
-    }
-
-    if (token && isValid) {
-        console.log(true)
-    }
-
-    // ✅ All good — proceed
-    return NextResponse.next();
 }
 
 // Configure which paths this middleware applies to

@@ -1,5 +1,6 @@
 import { jwtVerify, SignJWT } from 'jose';
 import type { ServerResponse } from '../typemodule';
+import { prismadb } from '../server/lib/dbconnection';
 
 
 
@@ -58,17 +59,33 @@ export async function verifyAccessTokens(token: string): Promise<boolean> {
 
 
 //verifies only the refresh token, if the client cant provide (accesstoken) it should provide refresh token.import { jwtVerify } from 'jose';
-export async function verifyRefreshToken(refreshToken: string) {
+export async function verifyRefreshToken(refreshToken: string): Promise<ServerResponse> {
     const refreshTokenSecrete = new TextEncoder().encode(process.env.AUTHSECRETE);
     try {
         const { payload } = await jwtVerify(refreshToken, refreshTokenSecrete);
+        const userId = payload.sub as string
 
+        //if token is invaaid retun error code of 401
         if (payload.userId !== 'refreshToken') {
             const response: ServerResponse = { message: 'token invalid', status: 401, }
-            return response
+            response
         }
 
-        return payload; // { sub, iat, exp, ... }
+        // check the (subject) attached to the token in the db
+        const findUser = await prismadb.user.findMany({
+            where: {
+                username: userId
+            }
+        })
+
+        if (!findUser) {
+            const response: ServerResponse = { message: 'invalid user token', status: 400, }
+            response
+        }
+
+        const reGenerateAccssToken = await generateAccessToken(userId)
+
+        return { message: reGenerateAccssToken, status: 200 }
     } catch (err) {
         throw new Error('Invalid or expired refresh token');
     }
