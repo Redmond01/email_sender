@@ -2,10 +2,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyRefreshToken } from "../../helper/jwt";
 
-export async function POST(req: NextRequest) {
+export async function GET(req: NextRequest) {
     // Get cookie by name
     const myCookie = req.cookies.get("refreshToken"); // 👈 change "myToken" to your cookie name
-    const {token} = await req.json()
+    const redirect = req.nextUrl.searchParams.get("redirect") || "/"
 
 
     if (!myCookie) {
@@ -14,10 +14,11 @@ export async function POST(req: NextRequest) {
             { status: 404 }
         );
     }
-    const { message, status } = await verifyRefreshToken((myCookie['value']|| token))
-    const serverResponse = NextResponse.json({ message: 'accessToken regenerated' }, { status: status })
+    const { message, status } = await verifyRefreshToken(myCookie['value'])
+    const serverResponse = NextResponse.redirect(new URL(redirect, req.url))
+    // const serverResponse = NextResponse.json({ message: 'accessToken regenerated' }, { status: status })
     serverResponse.cookies.set('accessToken', message, { httpOnly: true, secure: false, sameSite: 'lax', maxAge: 60 * 60 * 2 })
-    console.log(myCookie, message, req.body);
 
     return serverResponse
+
 }
