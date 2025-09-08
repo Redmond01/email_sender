@@ -25,24 +25,22 @@ export async function generateRefreshToken(accessToken: string) {
 
 
 //generate accesstoken from the server (client first credentials login)
-export async function signUserId(id: number) {
+export async function generateAccessToken(id: string): Promise<string> {
     // Secret key (in production, use a strong secret or a private key)
     const secret = process.env.AUTHSECRETE
     const secretKey = new TextEncoder().encode(secret);
     // Create and sign the JWT
-    const token = await new SignJWT({ id }) // payload
+    const token = await new SignJWT({ sub: id }) // payload
         .setProtectedHeader({ alg: 'HS256' })
         .setIssuedAt()
         .setExpirationTime('1 day') // expires in 2 hours
-        .sign(secretKey);
-        
-
+        .sign(secretKey)
     return token;
 }
 
 
 //verifies only the access token, that is if the client can provide it.
-export async function verifyTokens(token: string): Promise<boolean> {
+export async function verifyAccessTokens(token: string): Promise<boolean> {
     const secretKey = process.env.AUTHSECRETE
     const verifyToken = new TextEncoder().encode(secretKey);
 
@@ -55,14 +53,11 @@ export async function verifyTokens(token: string): Promise<boolean> {
 }
 
 //verifies only the refresh token, if the client cant provide (accesstoken) it should provide refresh token.import { jwtVerify } from 'jose';
-
-// Your secret or public key (use env vars in real app)
-
 export async function verifyRefreshToken(refreshToken: string) {
 
     const refreshTokenSecrete = new TextEncoder().encode(process.env.AUTHSECRETE);
     try {
-        const { payload } = await jwtVerify(refreshToken,refreshTokenSecrete);
+        const { payload } = await jwtVerify(refreshToken, refreshTokenSecrete);
 
         // Optional: Add extra checks here
         // e.g., if (payload.type !== 'refresh') throw new Error('Invalid token type');

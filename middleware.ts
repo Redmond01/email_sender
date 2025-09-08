@@ -1,6 +1,6 @@
 // middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyTokens } from './app/helper/jwt';
+import { verifyAccessTokens } from './app/helper/jwt';
 import axios from 'axios';
 import type { serverRequestConfig } from './app/typemodule';
 
@@ -64,7 +64,7 @@ export default async function middleware(req: NextRequest) {
     }
 
     // Validate JWT signature and expiration
-    const isValid = await verifyTokens(token);
+    const isValid = await verifyAccessTokens(token);
     if (!isValid) {
         // Token is expired or tampered
         return NextResponse.redirect(new URL('/', req.url));

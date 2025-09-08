@@ -2,16 +2,16 @@
 import { compare } from '@node-rs/bcrypt';
 import { prismadb } from '../../lib/dbconnection';
 import type { ServerResponse } from '../../../typemodule'
-import { signUserId } from '../../../helper/jwt';
+import { generateAccessToken } from '../../../helper/jwt';
 import { generateRefreshToken } from '../../../helper/jwt';
 
 
 export const authUser = async (username: string, userPpassword: string): Promise<ServerResponse> => {
     try {
 
-        const findUser = await prismadb.email.findMany({
+        const findUser = await prismadb.user.findMany({
             where: {
-                email: username,
+                username: username,
             }
         })
 
@@ -27,7 +27,7 @@ export const authUser = async (username: string, userPpassword: string): Promise
         })
 
         if (user) {
-            const accessToken = await signUserId(user.id);
+            const accessToken = await generateAccessToken(user.id);
             const { success, refreshToken } = await generateRefreshToken(accessToken)
             const response: ServerResponse =
             {

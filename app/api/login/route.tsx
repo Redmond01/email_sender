@@ -10,7 +10,7 @@ export const POST = async (req: Request) => {
     try {
         const { username, password } = await req.json();
 
-        const auth = await authUser(username, String(password))
+        const auth = await authUser(username, (password))
 
         const serverResponse = NextResponse.json({ message: auth.message }, { status: auth.status })
         serverResponse.cookies.set('accessToken', auth.data?.accestoken, { httpOnly: true, secure: false, sameSite: 'lax', maxAge: 60 * 60 * 2 })
