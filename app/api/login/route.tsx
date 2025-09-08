@@ -2,6 +2,9 @@
 import { NextResponse } from 'next/server';
 import { authUser } from '../../server/tools/auth/login';
 
+export const GET = async(req:Request)=>{
+    return NextResponse.json({msg:'hello'})
+}
 
 export const POST = async (req: Request) => {
     try {

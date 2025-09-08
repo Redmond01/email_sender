@@ -14,9 +14,9 @@ datasource db {
   url      = "file:./email.db"
 }
 
-model Email {
-  id       Int    @id @default(autoincrement())
-  email    String
+model User {
+  id       String    @id 
+  username    String
   password String
 }
 

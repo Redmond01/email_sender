@@ -1,13 +1,13 @@
 
 import { hash } from '@node-rs/bcrypt';
 import type { ServerResponse } from '../../../typemodule.js';
-import {prismadb} from '../../lib/dbconnection';
+import { prismadb } from '../../lib/dbconnection';
+import { v4 } from 'uuid';
 import 'dotenv/config'
-import {} from 'node:crypto'
 
 export const signup = async (username: string, password: string, uniqueCode: string) => {
     const myEnvAuth = process.env.UNIQUECODE;
-    
+
     try {
         //compare unique code before moving down to database check
         if (uniqueCode !== myEnvAuth) {
@@ -16,9 +16,9 @@ export const signup = async (username: string, password: string, uniqueCode: str
         }
 
         //find if user exist in the database 
-        const ifUserExist = await prismadb.email.findFirst({
+        const ifUserExist = await prismadb.user.findFirst({
             where: {
-                email: username,
+                username: username,
             }
         });
 
@@ -30,12 +30,11 @@ export const signup = async (username: string, password: string, uniqueCode: str
         //the password will first be harshed into crypto keys 
         const harshedPassword = await hash(password, 12);
 
-        const createUser = await prismadb.email.create({
-            data: {
-                email: username,
-                password: harshedPassword
+        const createUser = await prismadb.user.create(
+            {
+                data: { username: username, id: v4(), password: harshedPassword }
             }
-        })
+        )
 
         if (createUser) {
             const response: ServerResponse = { message: 'user created', data: createUser, status: 200 }
