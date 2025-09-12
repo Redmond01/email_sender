@@ -22,7 +22,7 @@ export async function generateRefreshToken(accessToken: string) {
         return { success: true, refreshToken };
     } catch (error: any) {
         return { success: false, message: 'Invalid or expired access token', error: error.message };
-    }
+    }                                      
 }
 
 

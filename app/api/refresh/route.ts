@@ -14,9 +14,9 @@ export async function GET(req: NextRequest) {
             { status: 404 }
         );
     }
+    
     const { message, status } = await verifyRefreshToken(myCookie['value'])
     const serverResponse = NextResponse.redirect(new URL(redirect, req.url))
-    // const serverResponse = NextResponse.json({ message: 'accessToken regenerated' }, { status: status })
     serverResponse.cookies.set('accessToken', message, { httpOnly: true, secure: false, sameSite: 'lax', maxAge: 60 * 60 * 2 })
 
     return serverResponse

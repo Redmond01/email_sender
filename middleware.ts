@@ -12,7 +12,6 @@ export default async function middleware(req: NextRequest) {
     // 🌍 Public routes (skip protection)
     const publicRoutes = ['/', , '/api/refresh'];
 
-
     // Skip middleware for public routes
     if (publicRoutes.includes(pathname)) {
         return NextResponse.next();
