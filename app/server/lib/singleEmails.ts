@@ -1,12 +1,11 @@
 
-import { PrismaClient } from '@/app/generated/prisma/client.js';
-import {userRecipient,Response} from '@/app/typemodule';
+import { prismadb } from './dbconnection';
+import type { userRecipient, Response } from '../../typemodule';
 import validator from 'validator';
 
 
 
 export const singleEmail = async (recipientData: userRecipient) => {
-    const prismadb = new PrismaClient();
 
     try {
         // Validate email format
@@ -39,7 +38,7 @@ export const singleEmail = async (recipientData: userRecipient) => {
     } catch (e: any) {
         const response: Response = { message: 'error occured', status: 500 }
         return response
-    }finally{
+    } finally {
         await prismadb.$disconnect()
     }
 };

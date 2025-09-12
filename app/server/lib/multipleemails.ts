@@ -1,12 +1,10 @@
-import { PrismaClient } from '@/app/generated/prisma/client.js';
-import { userRecipient, Response } from '@/app/tools/email/main';
+import { prismadb } from './dbconnection';
+import type { userRecipient, Response } from '../../typemodule';
 import validator from 'validator';
 
 
 
 export async function multipleEmail(recipients: userRecipient[]) {
-
-  const prismadb = new PrismaClient();
 
   try {
 

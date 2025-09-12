@@ -29,3 +29,15 @@ export type serverRequestConfig = {
     withCredentials?: boolean
     url: string
 }
+
+export type Response = {
+    data?: {} | string,
+    message: string,
+    status: 200 | 400 | 500,
+    inserted?: number,
+    skipped?: number
+}
+
+export type csvDataFormat = {
+    [key: string]: Record<string, any>
+}

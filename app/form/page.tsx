@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Papa from 'papaparse';
+import axios from 'axios';
 
 
 interface BusinessFormData {
@@ -100,9 +101,11 @@ const BusinessForm: React.FC = () => {
       // Parse CSV using Papa Parse
       Papa.parse(csvFile, {
         header: true,
+        delimiter: ';',
         skipEmptyLines: true,
         dynamicTyping: true,
-        complete: async (results) => {
+
+        complete: async (results): Promise<{ [key: string]: string } | undefined> => {
           if (results.errors.length > 0) {
             console.error('CSV parsing errors:', results.errors);
             alert('Error parsing CSV file. Please check the file format.');
@@ -111,25 +114,26 @@ const BusinessForm: React.FC = () => {
           }
 
           const jsonData = results.data as CSVData[];
+
           setCsvData(jsonData);
 
-          console.log('Converted CSV to JSON:', jsonData);
+          // console.log('Converted CSV to JSON:', jsonData);
 
           // Send to API endpoint
           try {
-            const response = await fetch('/api/multiplecredentials', {
+            const response = await axios('http://localhost:5000/api/createuser', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify({
+              data: JSON.stringify({
                 data: jsonData,
                 filename: csvFile.name,
                 timestamp: new Date().toISOString()
               })
             });
 
-            if (response.ok) {
+            if (response.statusText === 'OK') {
               setUploadStatus('success');
               alert('CSV data successfully sent to API!');
             } else {
@@ -416,8 +420,8 @@ const BusinessForm: React.FC = () => {
             onClick={handleCSVSubmit}
             disabled={!csvFile || !securityChecked || isProcessing}
             className={`px-6 py-2 rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${!csvFile || !securityChecked || isProcessing
-                ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                : 'bg-green-400 text-white hover:bg-green-500 focus:ring-green-400'
+              ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              : 'bg-green-400 text-white hover:bg-green-500 focus:ring-green-400'
               }`}
           >
             {isProcessing ? (
