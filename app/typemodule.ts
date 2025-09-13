@@ -39,5 +39,5 @@ export type Response = {
 }
 
 export type csvDataFormat = {
-    [key: string]: Record<string, any>
+    [key: string]: string
 }

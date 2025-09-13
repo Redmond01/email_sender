@@ -1,12 +1,34 @@
-import type { csvDataFormat} from '../typemodule'
+import type { csvDataFormat } from '../typemodule'
 
 export const modifyStringKeyToValue = (data: csvDataFormat[]) => {
-    const entries = data.map((each) => {
+    return data.map((each) => {
         const eachObject = Object.entries(each);
-        if (eachObject.length === 0) return {}
+        if (eachObject.length === 0 || !eachObject) return {}
+        if (!eachObject) return { msg: "object not found" }
 
-        const [key, value] = eachObject[0];
+        const testObjectAvailability = eachObject[0];
 
-        const keyString = key
+        if (testObjectAvailability) {
+            const [key, value] = testObjectAvailability
+
+            const keyString = key.split(',').map((key: string) => key.trim())
+            const vlaueString = value.split(',').map((value: string) => value.trim())
+
+            if (keyString.length !== vlaueString.length) {
+                console.log('key and value dont match')
+            }
+            const result = {}
+
+            for (let i = 0; i < keyString.length; i++) {
+                result[keyString[i]] = vlaueString[i]
+            }
+            return result
+
+        }
+
+
+
+
+
     })
 }
