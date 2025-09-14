@@ -1,5 +1,5 @@
 export interface userRecipient {
-    id?: number,
+    id: string,
     name: string,
     email: string,
     companyName: string,
@@ -34,7 +34,7 @@ export type serverRequestConfig = {
 export type Response = {
     data?: {} | string,
     message: string,
-    status: 200 | 400 | 500,
+    status: 200 | 400 | 401 | 500,
     inserted?: number,
     skipped?: number
 }

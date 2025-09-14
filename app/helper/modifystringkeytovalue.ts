@@ -1,3 +1,4 @@
+import { v4 } from 'uuid';
 import type { NewData, CsvDataFormat, userRecipient } from '../typemodule'
 
 export const modifyStringKeyToValue = (data: CsvDataFormat): userRecipient[] | any => {
@@ -37,7 +38,7 @@ export const modifyStringKeyToValue = (data: CsvDataFormat): userRecipient[] | a
 
         const dss: NewData = {
             userStatus: true, emailValid: true, isFirstMail: false, email: results.email, companyName: results.companyName,
-            noOfEmailSent: 0, name: results.name, industry: results.industry
+            noOfEmailSent: 0, id:v4(), name: results.name, industry: results.industry
         }
         return dss
     })

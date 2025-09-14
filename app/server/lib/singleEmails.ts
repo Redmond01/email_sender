@@ -24,7 +24,7 @@ export const singleEmail = async (recipientData: userRecipient) => {
 
         if (existingRecipient) {
             // send back error message to api
-            const response: Response = { inserted: 0, message: 'recipient credentials already exist in db', status: 400 }
+            const response: Response = { inserted: 0, message: 'recipient credentials already exist in db', status: 401 }
 
             return response
         }
@@ -38,7 +38,5 @@ export const singleEmail = async (recipientData: userRecipient) => {
     } catch (e: any) {
         const response: Response = { message: 'error occured', status: 500 }
         return response
-    } finally {
-        await prismadb.$disconnect()
     }
 };

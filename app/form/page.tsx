@@ -9,7 +9,6 @@ interface BusinessFormData {
   lastname: string;
   email: string;
   companyName: string;
-  noOfEmailSent: string;
   industry: string;
 }
 
@@ -26,7 +25,6 @@ const BusinessForm: React.FC = () => {
     lastname: '',
     email: '',
     companyName: '',
-    noOfEmailSent: '',
     industry: ''
   });
 
@@ -42,10 +40,32 @@ const BusinessForm: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSingleSubmit = (e: React.MouseEvent) => {
+  const handleSingleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log('Single form submitted:', formData);
-    alert('Single credentials submitted successfully!');
+
+    try {
+      const response = await axios(`${process.env.NEXT_PUBLIC_LOGINROUTE}/api/single`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        data: JSON.stringify({
+          data: formData
+        })
+      })
+
+      if (response.statusText === 'OK') {
+        setUploadStatus('success');
+        console.log(response)
+        alert(response.data?.message);
+      } else {
+        throw new Error('API request failed');
+      }
+    } catch (apiError) {
+      // console.error('API Error:', apiError);
+      setUploadStatus('error');
+      alert('Failed to send data to API OR credentials already exist in database. Please try again.');
+    }
   };
 
   // CSV File Security Check
@@ -270,20 +290,6 @@ const BusinessForm: React.FC = () => {
                   value={formData.companyName}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-600 mb-2">
-                  Number of Emails Sent
-                </label>
-                <input
-                  type="number"
-                  name="noOfEmailSent"
-                  value={formData.noOfEmailSent}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
-                  min="0"
                   required
                 />
               </div>
