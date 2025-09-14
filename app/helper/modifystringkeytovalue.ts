@@ -15,8 +15,6 @@ export const modifyStringKeyToValue = (data: CsvDataFormat): userRecipient[] | a
         const [key, value] = nextLayer
 
 
-
-
         // the result of the above gives us the following, we now have array of keys and array of values
         const splitKey = key.split(',')
         const splitValue = value.split(',')

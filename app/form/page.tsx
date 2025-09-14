@@ -121,7 +121,7 @@ const BusinessForm: React.FC = () => {
 
           // Send to API endpoint
           try {
-            const response = await axios('http://localhost:5000/api/createuser', {
+            const response = await axios(`${process.env.NEXT_PUBLIC_LOGINROUTE}/api/multiple`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ const BusinessForm: React.FC = () => {
 
             if (response.statusText === 'OK') {
               setUploadStatus('success');
-              alert('CSV data successfully sent to API!');
+              alert(response.data?.message);
             } else {
               throw new Error('API request failed');
             }
@@ -390,7 +390,7 @@ const BusinessForm: React.FC = () => {
               <p>Columns: {Object.keys(csvData[0] || {}).join(', ')}</p>
             </div>
             <div className="mt-3 max-h-32 overflow-y-auto">
-              <pre className="text-xs text-gray-500 bg-white p-2 rounded border">
+              <pre className="text-xs text-gray-500 bg-white p-2 rounded border overflow-auto">
                 {JSON.stringify(csvData.slice(0, 2), null, 2)}
               </pre>
             </div>

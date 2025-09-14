@@ -36,7 +36,7 @@ export async function multipleEmail(recipients: userRecipient[]) {
         );
         const isValidEmail = validator.isEmail(recipient.email);
 
-        return !recipientExists && isValidEmail;
+        return !recipientExists && isValidEmail
       })
       .map(({ id, ...rest }) => rest);
 
