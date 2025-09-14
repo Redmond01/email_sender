@@ -29,3 +29,18 @@ function to collect csv and parse it and create an object with it
 function to collect that object and add to db
 update the 'noOfEmailSent' property
 create a json file using fs and store temporarily there
+
+
+
+
+
+    challenge:
+// key value pairs are clustered. 
+
+// solution:
+// 1.split the key using string methods
+// 2.split the value using the string methods
+// 3.check if the length of key matches value
+// 4.take key[1] to match value[1]
+// 5.create new object and add each to new key/value to a new object container using {...} syntax
+// 6.pass the newly created object into an interface of (UserRecepient) type

@@ -29,4 +29,5 @@ model Recipient {
   noOfEmailSent Int
   userStatus Boolean 
   industry String
+  isFirstMail Boolean
 }

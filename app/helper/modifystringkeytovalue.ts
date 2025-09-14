@@ -1,28 +1,7 @@
-interface userRecipient {
-    id?: number,
-    name: string,
-    email: string,
-    companyName: string,
-    noOfEmailSent: number
-    userStatus: boolean,
-    industry: string,
-    emailValid: boolean
-    isFirstMail: boolean
-}
-interface NewData extends userRecipient, Record<string, string | boolean | number> { }
-(() => {
-    const ds = [
-        {
-            'name,email,companyName,industry': 'raymond,Raymond@me.com,rayCo,construction '
-        },
-        {
-            'name,email,companyName,industry': 'seyi,seyi@she.com,seyistiches.inc,art'
-        }
-    ]
+import type { NewData, CsvDataFormat,userRecipient } from '../typemodule'
 
-
-
-    const result = ds.map((each) => {
+export const modifyStringKeyToValue = (data:CsvDataFormat) => {
+    const result = data.map((each) => {
         const getTemplate = Object.entries(each);
 
         const nextLayer = getTemplate[0]
@@ -65,10 +44,6 @@ interface NewData extends userRecipient, Record<string, string | boolean | numbe
         return dss
     })
 
-    console.log(result)
-})()
-
-
-
-
+    return result
+}
 

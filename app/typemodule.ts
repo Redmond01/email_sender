@@ -7,6 +7,7 @@ export interface userRecipient {
     userStatus: boolean,
     industry: string,
     emailValid: boolean
+    isFirstMail: boolean
 }
 
 export type ServerResponse = {
@@ -38,6 +39,7 @@ export type Response = {
     skipped?: number
 }
 
-export type csvDataFormat = {
-    [key: string]: string
-}
+export type CsvDataFormat = Record<string, string>[]
+
+export interface NewData extends userRecipient, Record<string, string | boolean | number> { }
+
