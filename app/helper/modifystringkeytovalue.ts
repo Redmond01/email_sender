@@ -1,6 +1,6 @@
-import type { NewData, CsvDataFormat,userRecipient } from '../typemodule'
+import type { NewData, CsvDataFormat, userRecipient } from '../typemodule'
 
-export const modifyStringKeyToValue = (data:CsvDataFormat) => {
+export const modifyStringKeyToValue = (data: CsvDataFormat): userRecipient[] | any => {
     const result = data.map((each) => {
         const getTemplate = Object.entries(each);
 

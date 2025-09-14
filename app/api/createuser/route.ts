@@ -16,34 +16,12 @@ export const GET = async (req: Request) => {
 export const POST = async (req: Request) => {
     const { data } = await req.json()
     try {
-        // const dataReceived = await req.json();
-        // const {
-        //     name,
-        //     email,
-        //     companyName,
-        //     noOfEmailSent,
-        //     userStatus,
-        //     industry,
-        //     validateEmail,
-        // } = dataReceived
 
-        // const authRecipient = await createRecipient({
-        //     name: name,
-        //     email: email,
-        //     companyName: companyName,
-        //     noOfEmailSent: 0,
-        //     userStatus: true,
-        //     industry: industry,
-        //     emailValid: false
-        // })
-        // const modifyDataReceived = modifyStringKeyToValue(data)
+        const modifyDataReceived = modifyStringKeyToValue(data)
         
-        // const updateArray = modifyDataReceived.map((each) => {
-        //     return { ...each, noOfEmailSent: 0, userStatus: true, emailValid: true ,isFirstMail:false}
-        // })
-        console.log(data)
+        console.log(modifyDataReceived)
 
-        // await multipleEmail(updateArray)
+        await multipleEmail(modifyDataReceived)
         return NextResponse.json({ message: 'hello' })
     } catch (e) {
         return NextResponse.json({ message: e }, { status: 500 })

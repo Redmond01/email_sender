@@ -22,7 +22,7 @@ interface NewData extends userRecipient, Record<string, string | boolean | numbe
 
 
 
-    const result = ds.map((each) => {
+    const result = ds.map((each):userRecipient[] | unknown => {
         const getTemplate = Object.entries(each);
 
         const nextLayer = getTemplate[0]
