@@ -11,6 +11,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@apollo/client": "^4.0.5",
+    "@apollo/server": "^5.0.0",
     "@node-rs/bcrypt": "^1.10.7",
     "@prisma/client": "^6.14.0",
     "@types/papaparse": "^5.3.16",
@@ -18,6 +20,7 @@
     "bcrypt": "^6.0.0",
     "dayjs": "^1.11.13",
     "dotenv": "^17.2.1",
+    "graphql": "^16.11.0",
     "jose": "^6.1.0",
     "lucide-react": "^0.542.0",
     "mongoose": "^8.17.0",
@@ -27,6 +30,7 @@
     "papaparse": "^5.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "rxjs": "^7.8.2",
     "uninstall": "^0.0.0",
     "uuid": "^12.0.0",
     "validator": "^13.15.15"

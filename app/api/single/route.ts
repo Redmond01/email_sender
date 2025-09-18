@@ -14,9 +14,7 @@ export const GET = async (req: Request) => {
 
 
 export const POST = async (req: Request) => {
-
     const { data } = await req.json()
-
     try {
         const { firstname: name, email, companyName, industry } = data
 
