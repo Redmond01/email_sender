@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db": "ts-node app/test.ts"
+    "db": "nodemon app/test.ts"
   },
   "type": "module",
   "dependencies": {
