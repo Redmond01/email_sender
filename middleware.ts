@@ -1,6 +1,6 @@
 // middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAccessTokens } from './app/helper/jwt';
+import { verifyAccessTokens } from './app/server/helper/jwt';
 
 
 

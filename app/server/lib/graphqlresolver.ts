@@ -1,4 +1,5 @@
-import { prismadb } from "./dbconnection"
+import { prismadb } from "./dbconnection";
+
 export const resolver = {
     Query: {
         getRecipientLength: async () => {
