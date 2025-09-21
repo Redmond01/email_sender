@@ -1,7 +1,7 @@
 
 import { hash } from '@node-rs/bcrypt';
 import type { ServerResponse } from '../../../typemodule.js';
-import { prismadb } from '../../lib/_dbconnection.js';
+import { prismadb } from '../../lib/dbconnection.js';
 import { v4 } from 'uuid';
 import 'dotenv/config'
 

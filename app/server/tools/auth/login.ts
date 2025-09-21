@@ -1,6 +1,6 @@
 
 import { compare } from '@node-rs/bcrypt';
-import { prismadb } from '../../lib/_dbconnection';
+import { prismadb } from '../../lib/dbconnection';
 import type { ServerResponse } from '../../../typemodule'
 import { generateAccessToken } from '../../../helper/jwt';
 import { generateRefreshToken } from '../../../helper/jwt';

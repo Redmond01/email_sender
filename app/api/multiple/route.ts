@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server';
 
-import { prismadb } from '../../server/lib/_dbconnection';
+import { prismadb } from '../../server/lib/dbconnection';
 import { multipleEmail } from '../../server/lib/multipleemails';
 import { modifyStringKeyToValue } from '../../helper/modifystringkeytovalue';
 

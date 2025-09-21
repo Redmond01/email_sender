@@ -1,6 +1,6 @@
 import { jwtVerify, SignJWT } from 'jose';
 import type { ServerResponse } from '../typemodule';
-import { prismadb } from '../server/lib/_dbconnection';
+import { prismadb } from '../server/lib/dbconnection';
 
 
 

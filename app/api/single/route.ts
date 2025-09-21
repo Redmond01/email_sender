@@ -1,5 +1,5 @@
 
-import { prismadb } from '../../server/lib/_dbconnection';
+import { prismadb } from '../../server/lib/dbconnection';
 import { NextResponse } from "next/server";
 import { singleEmail } from "../../server/lib/singleEmails";
 import type { ServerResponse } from "../../typemodule";
