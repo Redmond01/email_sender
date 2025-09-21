@@ -9,6 +9,7 @@ const resolver = {
     Query: {
         getRecipientLength: async () => {
           const ds =  await prismadb.user.count()
+          console.log(ds)
           return {AllRecipientLength:ds}
         }
     }

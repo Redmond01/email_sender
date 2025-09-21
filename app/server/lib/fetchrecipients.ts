@@ -1,6 +1,6 @@
-import { PrismaClient } from '@/app/generated/prisma/client.js'
+import { PrismaClient } from '@prisma/client'
 import { writeFile as writeTemporaryJson } from 'fs/promises'
-import {randomizeEmailIndex} from '../../helper/randomindex'
+import {randomizeEmailIndex} from '../../server/helper/randomindex'
 
 export const fetchRecipients = async () => {
   const prismadb = new PrismaClient();

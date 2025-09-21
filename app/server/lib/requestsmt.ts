@@ -1,4 +1,4 @@
-import type {SmtpSchema} from '../typemodule.js';
+import type {SmtpSchema} from '../../typemodule';
 import 'dotenv/config'
 
 export const requestsmtps = ()=>{
@@ -7,7 +7,7 @@ export const requestsmtps = ()=>{
         .filter(keys => keys.startsWith("EMAIL_"));
 
     for (let i = 0; i < getCredentials.length; i++) {
-        const getRecipients = process.env[getCredentials[i]] as string
+        const getRecipients = process.env[getCredentials?[i]] as string
         const redefindEmails = JSON.parse(getRecipients)
         newArray.push(redefindEmails)
     }
