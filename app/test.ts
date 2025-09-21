@@ -1,17 +1,15 @@
 import { ApolloServer, } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone'
 import { dbType } from './server/lib/graphqltypes.ts';
-import { prismadb } from './server/lib/dbconnection.js';
+import { prismadb } from './server/lib/dbconnection.ts';
 
 
 
 const resolver = {
     Query: {
         getRecipientLength: async () => {
-
           const ds =  await prismadb.user.count()
-          console.log(ds)
-          return ds 
+          return {AllRecipientLength:ds}
         }
     }
 }
