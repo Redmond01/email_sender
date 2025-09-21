@@ -1,5 +1,5 @@
 
-import { prismadb } from './dbconnection';
+import { prismadb } from './_dbconnection';
 import type { userRecipient, Response } from '../../typemodule';
 import validator from 'validator';
 
