@@ -1,6 +1,8 @@
 "use client"
 //grok
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { gql } from '@apollo/client';
+import { myNewApoloClient } from '../../client/lib/graphqlclient';
 
 const EmailCampaignDashboard: React.FC = () => {
   const [totalUsers, setTotalUsers] = useState<number | null>(null);
@@ -16,7 +18,18 @@ const EmailCampaignDashboard: React.FC = () => {
   const [progress, setProgress] = useState<number>(0);
   const [logs, setLogs] = useState<string[]>([]);
 
-  const fetchTotalUsers = () => {
+  const fetchTotalUsers = async () => {
+    const {data} = await myNewApoloClient.query({
+      fetchPolicy: 'network-only',
+      query: gql`
+        query {
+           getRecipientLength {
+            AllRecipientLength
+          }
+        }
+        `
+    })
+    console.log(data)
     // Simulate fetch
     setTotalUsers(1500);
   };
