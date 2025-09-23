@@ -1,11 +1,11 @@
 "use client"
 //grok
 import React, { useState, useEffect } from 'react';
-import { gql } from '@apollo/client';
+import { ApolloClient, gql } from '@apollo/client';
 import { myNewApoloClient } from '../../client/lib/graphqlclient';
 
 const EmailCampaignDashboard: React.FC = () => {
-  const [totalUsers, setTotalUsers] = useState<number | null>(null);
+
   const [pendingUsers, setPendingUsers] = useState<number | null>(null);
   const [selectedIndustry, setSelectedIndustry] = useState<string>('');
   const [sortByEmails, setSortByEmails] = useState<string>('asc');
@@ -19,8 +19,10 @@ const EmailCampaignDashboard: React.FC = () => {
   const [logs, setLogs] = useState<string[]>([]);
 
   const fetchTotalUsers = async () => {
-    const {data} = await myNewApoloClient.query({
-      fetchPolicy: 'network-only',
+
+    // const response = await myNewApoloClient.query({
+    const response:ApolloClient.QueryResult<{getRecipientLength:{AllRecipientLength:number}}> = await myNewApoloClient.query({
+      // fetchPolicy: 'network-only',
       query: gql`
         query {
            getRecipientLength {
@@ -29,9 +31,12 @@ const EmailCampaignDashboard: React.FC = () => {
         }
         `
     })
-    console.log(data)
     // Simulate fetch
-    setTotalUsers(1500);
+    const totalNumberOfRecepients = response.data?.getRecipientLength?.AllRecipientLength
+    if(!totalNumberOfRecepients){
+      return {msg:'data not found'}
+    }
+    setTotalUsers(totalNumberOfRecepients);
   };
 
   const fetchPendingUsers = () => {
@@ -107,7 +112,7 @@ const EmailCampaignDashboard: React.FC = () => {
           }}>
             <h3 style={{ fontSize: '1.1rem', color: '#333', margin: '0 0 10px' }}>Total Users</h3>
             <button
-              onClick={fetchTotalUsers}
+             
               style={{
                 backgroundColor: '#28a745',
                 color: 'white',
@@ -120,7 +125,7 @@ const EmailCampaignDashboard: React.FC = () => {
             >
               Fetch Total
             </button>
-            {totalUsers !== null && <p style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#007bff', margin: '10px 0 0' }}>{totalUsers}</p>}
+
           </div>
 
           <div style={{
