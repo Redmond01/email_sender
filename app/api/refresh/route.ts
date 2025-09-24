@@ -1,6 +1,6 @@
 
 import { NextRequest, NextResponse } from "next/server";
-import { verifyRefreshToken } from "../../helper/jwt";
+import { verifyRefreshToken } from "../../server/helper/jwt";
 
 export async function GET(req: NextRequest) {
     // Get cookie by name

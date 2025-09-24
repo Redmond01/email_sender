@@ -6,11 +6,12 @@ import { verifyAccessTokens } from './app/server/helper/jwt';
 
 export default async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
+
     // 🛑 Routes to protect (you can customize)
-    const protectedRoutes = ['/admin', '/form'];
+    const protectedRoutes = ['/admin', '/form', '/email'];
 
     // 🌍 Public routes (skip protection)
-    const publicRoutes = ['/', , '/api/refresh'];
+    const publicRoutes = ['/', '/api/refresh'];
 
     // Skip middleware for public routes
     if (publicRoutes.includes(pathname)) {
@@ -43,7 +44,6 @@ export default async function middleware(req: NextRequest) {
         return NextResponse.redirect(new URL(redirectUrl, req.url));
     }
 
-    console.log('first')
 
     // final fallback
     return NextResponse.next()
@@ -53,6 +53,6 @@ export default async function middleware(req: NextRequest) {
 
 // Configure which paths this middleware applies to
 export const config = {
-    matcher: ['/form/:path*', '/admin/:path*'],
+    matcher: ['/form/:path*', '/admin/:path*', '/email/:path*'],
 };
 

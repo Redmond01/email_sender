@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { validateObject } from '../helper/checkValue'
+import { validateObject } from '../server/helper/checkValue'
 import axios from 'axios'
 import { autoRefreshRequest } from '../utils/axios';
 
