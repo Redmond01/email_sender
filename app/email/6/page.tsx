@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ApolloClient, gql } from '@apollo/client';
 import { myNewApoloClient } from '../../client/lib/graphqlclient';
+import Link from 'next/link';
 
 const DashboardOverview: React.FC = () => {
     const [totalUsers, setTotalUsers] = useState<number | null>(null);
@@ -137,9 +138,11 @@ const Users: React.FC = () => {
                         </tbody>
                     </table>
                 </div>
-                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-                    Add New User
-                </button>
+                <Link href={'/form'} className='hover:cursor-pointer'>
+                    <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 ">
+                        Add New User
+                    </button>
+                </Link>
             </div>
         </div>
     );
