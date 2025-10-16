@@ -1,0 +1,2688 @@
+{
+    "Sports": [
+        {
+            "SportID": 1,
+            "SportName": "Football",
+            "Order": 1,
+            "Category": [
+                {
+                    "ItemID": 11618383,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Special Offer",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25274372,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Daily Combo Odds Boost",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 3,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 3
+                },
+                {
+                    "ItemID": 10000738,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "UEFA",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 20033594,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Champions League, Women",
+                            "ItemEventCount": 9,
+                            "NoOfOdds": 1335,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 1335
+                },
+                {
+                    "ItemID": 10000840,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "England",
+                    "ItemTournamentCount": 8,
+                    "Tournaments": [
+                        {
+                            "ItemID": 20268708,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "FA Trophy - Qualification",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 267,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 20001479,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "National League",
+                            "ItemEventCount": 13,
+                            "NoOfOdds": 737,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 20006319,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "National League North",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 648,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 20007747,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Northern Premier Division",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 255,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24491221,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Professional Development League",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 776,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 20071624,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Premier League Cup ",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 240,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 21621518,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Southern Premier South Division",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 85,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25268054,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "EFL Trophy",
+                            "ItemEventCount": 17,
+                            "NoOfOdds": 9373,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 12381
+                },
+                {
+                    "ItemID": 10001102,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "France",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21763850,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "National",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 293,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 293
+                },
+                {
+                    "ItemID": 11522636,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Netherlands",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21522641,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Eredivisie Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 520,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 520
+                },
+                {
+                    "ItemID": 11522761,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Scotland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21982205,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "League One",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 3242,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 3242
+                },
+                {
+                    "ItemID": 10000740,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International Club",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276389,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "UEFA Europa Cup, Women",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 1362,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 1362
+                },
+                {
+                    "ItemID": 10001484,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International Youth",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21994008,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "U20 World Cup",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 1088,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 1088
+                },
+                {
+                    "ItemID": 11522799,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Argentina",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21543501,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga Profesional, Reserves",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 443,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 443
+                },
+                {
+                    "ItemID": 11518207,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Armenia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21521911,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "First League ",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 10,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 10
+                },
+                {
+                    "ItemID": 11522607,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Austria",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21522611,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Regionalliga Centre",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 126,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 126
+                },
+                {
+                    "ItemID": 10321728,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Brazil",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268143,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Copa Santa Catarina",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 140,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 140
+                },
+                {
+                    "ItemID": 11522814,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Colombia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21858668,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Copa Colombia",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 550,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 550
+                },
+                {
+                    "ItemID": 11522821,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Ecuador",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23194388,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "LigaPro Primera B",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 211,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 211
+                },
+                {
+                    "ItemID": 11522014,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Iran",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21621214,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Azadegan League ",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 340,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 340
+                },
+                {
+                    "ItemID": 11522032,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Jordan",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21867622,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "1st Division",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 404,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 404
+                },
+                {
+                    "ItemID": 11522771,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Northern Ireland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21522786,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "League Cup",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 872,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 872
+                },
+                {
+                    "ItemID": 10001123,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Norway",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22020744,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "3. Division",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 288,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 288
+                },
+                {
+                    "ItemID": 11522841,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Paraguay",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25274709,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Copa Paraguay",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 284,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 284
+                },
+                {
+                    "ItemID": 11522060,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Qatar",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276267,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "U23 Olympic League",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 184,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 184
+                },
+                {
+                    "ItemID": 11520019,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Romania",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21520021,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga 2",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 284,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 284
+                },
+                {
+                    "ItemID": 10001161,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Sweden",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25270507,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "U21 Ligacupen Elit",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 360,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 360
+                },
+                {
+                    "ItemID": 11522857,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Uruguay",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 24329807,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Tercera Division",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 728,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 728
+                },
+                {
+                    "ItemID": 11522789,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Wales",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21522790,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Premier League",
+                            "ItemEventCount": 12,
+                            "NoOfOdds": 5487,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 5487
+                }
+            ],
+            "NoOfOdds": 30935,
+            "MenuUniqueID": "1"
+        },
+        {
+            "SportID": 1,
+            "SportName": "Special Offer",
+            "Order": 3,
+            "Category": [
+                {
+                    "ItemID": 25274372,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Daily Combo Odds Boost",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 1003132047,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "The New Saints, Penybont FC & Scunthorpe United All to Win - 07.10.25",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 3,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": false
+                        }
+                    ],
+                    "NoOfOdds": 3
+                }
+            ],
+            "NoOfOdds": 3,
+            "MenuUniqueID": "11618383_2"
+        },
+        {
+            "SportID": 8,
+            "SportName": "FootballGO",
+            "Order": 2,
+            "Category": [
+                {
+                    "ItemID": 15266236,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "England",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266301,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Premier League",
+                            "ItemEventCount": 40,
+                            "NoOfOdds": 8960,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25275922,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Premier League 30",
+                            "ItemEventCount": 28,
+                            "NoOfOdds": 6272,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 15232
+                },
+                {
+                    "ItemID": 15266682,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "UEFA",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25273901,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Champions League",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 0,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": false
+                        },
+                        {
+                            "ItemID": 25276335,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Champions League 30",
+                            "ItemEventCount": 36,
+                            "NoOfOdds": 8064,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 8064
+                },
+                {
+                    "ItemID": 15266238,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Italy",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266303,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Serie A",
+                            "ItemEventCount": 40,
+                            "NoOfOdds": 8960,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 8960
+                },
+                {
+                    "ItemID": 15266239,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Germany",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266304,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Bundesliga",
+                            "ItemEventCount": 27,
+                            "NoOfOdds": 6048,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 6048
+                },
+                {
+                    "ItemID": 15266240,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Spain",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266305,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO La Liga",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 2240,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 2240
+                },
+                {
+                    "ItemID": 15266237,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "France",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266302,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Ligue 1",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 0,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": false
+                        }
+                    ],
+                    "NoOfOdds": 0
+                },
+                {
+                    "ItemID": 15266353,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Netherlands",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268868,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Eredivisie",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 0,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": false
+                        }
+                    ],
+                    "NoOfOdds": 0
+                },
+                {
+                    "ItemID": 15266355,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Portugal",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268870,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO Primeira",
+                            "ItemEventCount": 27,
+                            "NoOfOdds": 6048,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 6048
+                },
+                {
+                    "ItemID": 15266354,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Nigeria",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268869,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GO NPFL",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 2240,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 2240
+                }
+            ],
+            "NoOfOdds": 48832,
+            "MenuUniqueID": "8"
+        },
+        {
+            "SportID": 2,
+            "SportName": "Basketball",
+            "Order": 5,
+            "Category": [
+                {
+                    "ItemID": 10035932,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Eurocup",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21321670,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Eurocup ",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 2292,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 2292
+                },
+                {
+                    "ItemID": 10954838,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Champions League",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21321228,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Champions League",
+                            "ItemEventCount": 16,
+                            "NoOfOdds": 1312,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 1312
+                },
+                {
+                    "ItemID": 12997735,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "France",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23000327,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Coupe de France",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 154,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 154
+                },
+                {
+                    "ItemID": 12998022,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Argentina",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22015446,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga Nacional, Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 15,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 15
+                },
+                {
+                    "ItemID": 13008227,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Denmark",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21303844,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Basketligaen",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 73,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 73
+                },
+                {
+                    "ItemID": 13009871,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Finland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21308878,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Korisliigan",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 39,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 39
+                },
+                {
+                    "ItemID": 10233976,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International Clubs",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21677742,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga ABA 2",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 669,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 669
+                },
+                {
+                    "ItemID": 13027607,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Iceland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23047274,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Urvalsdeild , Women",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 117,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 117
+                },
+                {
+                    "ItemID": 13000360,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Portugal",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23605162,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga Feminina",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 19,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 19
+                },
+                {
+                    "ItemID": 12997757,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Sweden",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21318366,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Basketligan",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 90,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 90
+                },
+                {
+                    "ItemID": 13042422,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Tunisia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22329307,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "National A League",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 96,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 96
+                }
+            ],
+            "NoOfOdds": 4876,
+            "MenuUniqueID": "2"
+        },
+        {
+            "SportID": 5,
+            "SportName": "Tennis",
+            "Order": 10,
+            "Category": [
+                {
+                    "ItemID": 12942686,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "ATP",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 20234913,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Shanghai",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 418,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 418
+                },
+                {
+                    "ItemID": 12942687,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "WTA",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 20594489,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Wuhan",
+                            "ItemEventCount": 13,
+                            "NoOfOdds": 1090,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25273615,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Wuhan, Doubles",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 64,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 1154
+                },
+                {
+                    "ItemID": 15266229,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "WTA 125K",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276573,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Mallorca",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 428,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25276599,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Mallorca, Doubles",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 64,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 492
+                },
+                {
+                    "ItemID": 12942688,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Challenger",
+                    "ItemTournamentCount": 9,
+                    "Tournaments": [
+                        {
+                            "ItemID": 24357974,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Cali, Doubles",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 48,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23673646,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Roanne, Doubles",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 144,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24769231,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Valencia, Doubles",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 144,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24357972,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Cali",
+                            "ItemEventCount": 12,
+                            "NoOfOdds": 875,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24620094,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Fairfield",
+                            "ItemEventCount": 11,
+                            "NoOfOdds": 839,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25275050,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Hersonissos",
+                            "ItemEventCount": 9,
+                            "NoOfOdds": 640,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25272897,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Jinan",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 439,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23673416,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Roanne",
+                            "ItemEventCount": 11,
+                            "NoOfOdds": 915,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24769229,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Valencia",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 452,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 4496
+                },
+                {
+                    "ItemID": 15266729,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "UTR Men",
+                    "ItemTournamentCount": 3,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25275286,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Belgrade",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 16,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25276580,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Clemson",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 32,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25276584,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Champaign",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 24,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 72
+                },
+                {
+                    "ItemID": 15266730,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "UTR Women",
+                    "ItemTournamentCount": 3,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25275287,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Belgrade",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 12,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25274537,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Newport Beach",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 8,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25276581,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Champaign",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 20,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 40
+                },
+                {
+                    "ItemID": 15266232,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Simulated Reality",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276589,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "SRL Fall Invitational Grand Forks, ND, USA",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 224,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 224
+                },
+                {
+                    "ItemID": 15266233,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Simulated Reality Women",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276583,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "SRL Fall Invitational Warren, MI, USA, Women",
+                            "ItemEventCount": 8,
+                            "NoOfOdds": 224,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 224
+                }
+            ],
+            "NoOfOdds": 7120,
+            "MenuUniqueID": "5"
+        },
+        {
+            "SportID": 137,
+            "SportName": "ESport Soccer",
+            "Order": 29,
+            "Category": [
+                {
+                    "ItemID": 15263056,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "EAdriatic League",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25263057,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "EAdriatic League",
+                            "ItemEventCount": 14,
+                            "NoOfOdds": 140,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 140
+                },
+                {
+                    "ItemID": 13086137,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Electronic Leagues",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23086152,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "GT Nations League",
+                            "ItemEventCount": 14,
+                            "NoOfOdds": 140,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 140
+                }
+            ],
+            "NoOfOdds": 280,
+            "MenuUniqueID": "137"
+        },
+        {
+            "SportID": 31,
+            "SportName": "Badminton",
+            "Order": 35,
+            "Category": [
+                {
+                    "ItemID": 15266271,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268737,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Arctic Open, Women Singles",
+                            "ItemEventCount": 14,
+                            "NoOfOdds": 62,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25268739,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Arctic Open, Mixed Doubles",
+                            "ItemEventCount": 7,
+                            "NoOfOdds": 24,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 86
+                }
+            ],
+            "NoOfOdds": 86,
+            "MenuUniqueID": "31"
+        },
+        {
+            "SportID": 3,
+            "SportName": "Baseball",
+            "Order": 37,
+            "Category": [
+                {
+                    "ItemID": 10001581,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "USA",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 20001582,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "MLB",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 222,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 222
+                }
+            ],
+            "NoOfOdds": 222,
+            "MenuUniqueID": "3"
+        },
+        {
+            "SportID": 22,
+            "SportName": "Darts",
+            "Order": 50,
+            "Category": [
+                {
+                    "ItemID": 13996916,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "PDC Darts",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23996896,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "World Grand Prix",
+                            "ItemEventCount": 12,
+                            "NoOfOdds": 332,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 332
+                },
+                {
+                    "ItemID": 10001819,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25266410,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Modus Super Series",
+                            "ItemEventCount": 7,
+                            "NoOfOdds": 105,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 105
+                }
+            ],
+            "NoOfOdds": 437,
+            "MenuUniqueID": "22"
+        },
+        {
+            "SportID": 109,
+            "SportName": "ESport Counter-Strike",
+            "Order": 54,
+            "Category": [
+                {
+                    "ItemID": 15266740,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Dust2.dk CS:GO",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25274640,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Dust2.dk Ligaen",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 6,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 6
+                },
+                {
+                    "ItemID": 15266258,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Eden Esports CS:GO",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25272595,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "CCT South American Series",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 8,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25272590,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "CCT European Series",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 6,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 14
+                },
+                {
+                    "ItemID": 12461705,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "ESL",
+                    "ItemTournamentCount": 4,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22461706,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "ESL Pro League",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 12,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25274707,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "ESL Challenger League Europe",
+                            "ItemEventCount": 13,
+                            "NoOfOdds": 26,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25274708,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "ESL Challenger League South America",
+                            "ItemEventCount": 9,
+                            "NoOfOdds": 18,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 25274741,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "ESL Challenger League Asia",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 6,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 62
+                }
+            ],
+            "NoOfOdds": 82,
+            "MenuUniqueID": "109"
+        },
+        {
+            "SportID": 111,
+            "SportName": "ESport League of Legends",
+            "Order": 64,
+            "Category": [
+                {
+                    "ItemID": 12461702,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Riot LoL",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22742995,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "European Masters Summer - Group Stage",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 20,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 20
+                }
+            ],
+            "NoOfOdds": 20,
+            "MenuUniqueID": "111"
+        },
+        {
+            "SportID": 29,
+            "SportName": "Futsal",
+            "Order": 83,
+            "Category": [
+                {
+                    "ItemID": 12965872,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Italy",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23094524,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Serie A ",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 20,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 20
+                },
+                {
+                    "ItemID": 15266438,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Romania",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22282126,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Liga 1",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 3,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 3
+                },
+                {
+                    "ItemID": 13076143,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Russia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23096090,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Superliga",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 25,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 25
+                },
+                {
+                    "ItemID": 12623972,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Spain",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23094466,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Primera Division",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 5,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 5
+                }
+            ],
+            "NoOfOdds": 53,
+            "MenuUniqueID": "29"
+        },
+        {
+            "SportID": 6,
+            "SportName": "Handball",
+            "Order": 86,
+            "Category": [
+                {
+                    "ItemID": 13055546,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Czech Republic",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23055563,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Extraliga",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 30,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 30
+                },
+                {
+                    "ItemID": 12755521,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Denmark ",
+                    "ItemTournamentCount": 3,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23087889,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Handboldligaen",
+                            "ItemEventCount": 7,
+                            "NoOfOdds": 84,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23053366,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "1. Division, Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 27,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23368029,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Cup, Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 17,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 128
+                },
+                {
+                    "ItemID": 11982036,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Greece",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23238027,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "A1",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 28,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 28
+                },
+                {
+                    "ItemID": 13057312,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Russia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23057314,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Super League, Women",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 45,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 45
+                },
+                {
+                    "ItemID": 13073113,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Serbia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21219001,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Superliga Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 19,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 19
+                },
+                {
+                    "ItemID": 13052634,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Sweden",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23052635,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Elitserien, Women ",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 43,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 43
+                }
+            ],
+            "NoOfOdds": 293,
+            "MenuUniqueID": "6"
+        },
+        {
+            "SportID": 4,
+            "SportName": "Ice Hockey",
+            "Order": 87,
+            "Category": [
+                {
+                    "ItemID": 13047272,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "USA ",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23047273,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "NHL",
+                            "ItemEventCount": 19,
+                            "NoOfOdds": 2419,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 2419
+                },
+                {
+                    "ItemID": 12163331,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Russia",
+                    "ItemTournamentCount": 3,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23048587,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "KHL",
+                            "ItemEventCount": 16,
+                            "NoOfOdds": 1973,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23047123,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "MHL",
+                            "ItemEventCount": 10,
+                            "NoOfOdds": 748,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 23047130,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "VHL ",
+                            "ItemEventCount": 20,
+                            "NoOfOdds": 978,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 3699
+                },
+                {
+                    "ItemID": 12145328,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Finland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23107776,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Mestis",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 78,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 78
+                },
+                {
+                    "ItemID": 13047018,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Belarus",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23047019,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Extraliga",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 300,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 300
+                },
+                {
+                    "ItemID": 10196424,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Champions Hockey League",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21288963,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Champions Hockey League",
+                            "ItemEventCount": 12,
+                            "NoOfOdds": 974,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": true,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 974
+                },
+                {
+                    "ItemID": 10002603,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 21293052,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Alps Hockey League",
+                            "ItemEventCount": 3,
+                            "NoOfOdds": 236,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 236
+                },
+                {
+                    "ItemID": 13088724,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Norway",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276440,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "U20 Elite",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 86,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 86
+                },
+                {
+                    "ItemID": 13047143,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Slovakia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23100882,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "1st League",
+                            "ItemEventCount": 6,
+                            "NoOfOdds": 450,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 450
+                },
+                {
+                    "ItemID": 13047246,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Switzerland",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23047266,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Swiss League",
+                            "ItemEventCount": 5,
+                            "NoOfOdds": 389,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 389
+                }
+            ],
+            "NoOfOdds": 8631,
+            "MenuUniqueID": "4"
+        },
+        {
+            "SportID": 19,
+            "SportName": "Snooker",
+            "Order": 104,
+            "Category": [
+                {
+                    "ItemID": 10007478,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25272412,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Xi'an Grand Prix",
+                            "ItemEventCount": 16,
+                            "NoOfOdds": 416,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 416
+                }
+            ],
+            "NoOfOdds": 416,
+            "MenuUniqueID": "19"
+        },
+        {
+            "SportID": 37,
+            "SportName": "Squash",
+            "Order": 108,
+            "Category": [
+                {
+                    "ItemID": 11292701,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25273618,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Open Squash Classic, Women",
+                            "ItemEventCount": 4,
+                            "NoOfOdds": 8,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 8
+                }
+            ],
+            "NoOfOdds": 8,
+            "MenuUniqueID": "37"
+        },
+        {
+            "SportID": 20,
+            "SportName": "Table Tennis",
+            "Order": 110,
+            "Category": [
+                {
+                    "ItemID": 12456133,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Czech Republic",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 24032315,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Czech Liga Pro",
+                            "ItemEventCount": 13,
+                            "NoOfOdds": 56,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 56
+                },
+                {
+                    "ItemID": 10117567,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 2,
+                    "Tournaments": [
+                        {
+                            "ItemID": 22451632,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "TT Cup",
+                            "ItemEventCount": 16,
+                            "NoOfOdds": 96,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        },
+                        {
+                            "ItemID": 24057690,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "TT Elite Series",
+                            "ItemEventCount": 23,
+                            "NoOfOdds": 118,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 214
+                }
+            ],
+            "NoOfOdds": 270,
+            "MenuUniqueID": "20"
+        },
+        {
+            "SportID": 23,
+            "SportName": "Volleyball",
+            "Order": 112,
+            "Category": [
+                {
+                    "ItemID": 10001320,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "International",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25272927,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "NORCECA - Final Six",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 52,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 52
+                },
+                {
+                    "ItemID": 15266826,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Czechia",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25276568,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "1. Liga",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 12,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 12
+                },
+                {
+                    "ItemID": 13024687,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "France",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 25268792,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Super Coupe, Women",
+                            "ItemEventCount": 1,
+                            "NoOfOdds": 30,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 30
+                },
+                {
+                    "ItemID": 13055601,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Kazakhstan ",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23058340,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "National League",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 54,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 54
+                },
+                {
+                    "ItemID": 13026696,
+                    "ItemType": 2,
+                    "ItemCode": "F",
+                    "ItemName": "Turkey",
+                    "ItemTournamentCount": 1,
+                    "Tournaments": [
+                        {
+                            "ItemID": 23587981,
+                            "ItemType": 3,
+                            "ItemCode": "F",
+                            "ItemName": "Cup, Women ",
+                            "ItemEventCount": 2,
+                            "NoOfOdds": 90,
+                            "InitRegionID": 0,
+                            "InitAreaID": 0,
+                            "InitMarketID": 0,
+                            "ContainsOutrights": false,
+                            "ContainsMatches": true
+                        }
+                    ],
+                    "NoOfOdds": 90
+                }
+            ],
+            "NoOfOdds": 238,
+            "MenuUniqueID": "23"
+        }
+    ]
+}
