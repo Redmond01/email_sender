@@ -10,9 +10,10 @@ this server will give the user ability to add credentials to the db:
 a). "acessToken" signed by the JOSE <jwt> method
 b). "refreshToken" signed by the JOSE <jwt> method
 4. assign the both tokens to the client cookies, via the server cookies method, with some protection from script. 
-3. send response and response code back to the client
+3. send response and response code back to the client.
 
-</login> (http):
+
+<api/login> (http):
 this server will be responsible for login:
 1. collect client data
 2. validate the data with the database
@@ -20,7 +21,6 @@ this server will be responsible for login:
 a). "acessToken" signed by the JOSE <jwt> method
 b). "refreshToken" signed by the JOSE <jwt> method
 4. send response and response code back to the client
-
 
 <middleware>(http):
 this will be the first line of contact for the server to validate the client, IF client has cookies, it will allow, else it will redirect to "/"
@@ -105,15 +105,36 @@ this logic will recive and do the following:
 1. delete the argument to the database
 2. send response and response code back to the client
 
+<api/emailTemplate><http request (POST and GET)>:
+This api will be responsible for data update in the database. there will be total of 12 templates templates models in the database. this api will follow the same path of 
+"<api/credentials><http request (POST)>", whereby actions will be triggerd due to the {action} of the client
+
+GET:
+1.<useEffect client call> for all the template in each of the template models. each model will have their model nam attached to them
+
+POST:
+
+1. add unique template to specified template model<POST>:
+this logic will recive and do the following:
+1. append the argument to the database
+2. send response and response code back to the client
+
+1. delete unique template to specified template model<POST>:
+this logic will recive and do the following:
+1. append the argument to the database
+2. send response and response code back to the client
 
 
+C. INTERNAL SERVER CALL AND EXECUTION
+this part will work only on the backend internals, not realted to any client connections or client request.
 
-
-C. call execution
-This aspect is the main caller action for the application, it will interact with the application database, and make a simple logic call with the following attributes
-
-1. setup a cronjob that will  do the following:
-a) call the database <scheduler> model every 1hr.
-b). validate the scheduler time, with a preset time and timezone.
-2. trigger 
+1. smtp:
+this are chain of logic that will be performed on the smtp model in the db.
+"smtp-cron" logic: this logic will will be a trigger that will update the "smtp" model in the db at 6am, here are the things that will be updated
+1.maxPerDay
+2.sentToday
+3.sessions
+4.sessionplan
+5.lastreset
+6.daystamp
 

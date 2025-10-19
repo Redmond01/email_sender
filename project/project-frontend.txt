@@ -78,7 +78,7 @@ e) list of industries
 
 </credentials><http request (POST)>
 1. the user will be able to make general crud activities with the database through this route.
-a) user will select between single credential update or multiple credential update
+a) user will select between single credential update or multiple credential update and validatethem
 b) user add credentials < single email detatils> UI
 c) user delete credentials <single email details> UI
 d) user will be able to update smtp credentials
