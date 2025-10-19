@@ -59,4 +59,32 @@ summary :This api server contains 4 major block, and each of them contribute to 
 each of them will speak to the database, some of them will either READ, WRITE, while some will be both.
 
 execution: the api will have some dynamic concept to the way they will be effective, which will bring us to the {action, data} types, whereby the action will be
-what action will be called, this will be the backbone of what method/function the api call, and the data will involve the process
+what action will be called, this will be the backbone of what method/function the api call, and the data will be what the logic will work on.
+
+plan: there will be a server called "credential", and this server will be of a POST http request, and it will collect object of the {action, data} request data,
+and it will have some switch statement, in which {actions} will be triggred in the switch statment, and the {data} will be passed to the logic that matches switch call.
+
+1. add single credential<POST>:
+this logic will recive and do the following:
+1. append the argument to the database
+2. send response and response code back to the client
+
+2. multiple credential<POST>:
+this logic will recive and do the following:
+1. append the argument to the database
+2. send response and response code back to the client
+
+3. add smtp<POST>:
+this logic will recive and do the following:
+1. append the argument to the database
+2. send response and response code back to the client
+
+4. delete smtp<POST>:
+this logic will recive and do the following:
+1. delete the argument to the database
+2. send response and response code back to the client
+
+4. delete single credential<POST>:
+this logic will recive and do the following:
+1. delete the argument to the database
+2. send response and response code back to the client
