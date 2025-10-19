@@ -42,7 +42,7 @@ c). return both the "acessToken" and the receiced "refreshToken", back to the mi
 
 
 
-B. CLIENT INTERACTIONS WITH THE APPLICATION
+B. CLIENT INTERACTIONS API SERVERS
 
 <api/dashboard>(graphql):
 this api server will be responsible for data retrival from the db, with the following structure
@@ -104,3 +104,16 @@ this logic will recive and do the following:
 this logic will recive and do the following:
 1. delete the argument to the database
 2. send response and response code back to the client
+
+
+
+
+
+C. call execution
+This aspect is the main caller action for the application, it will interact with the application database, and make a simple logic call with the following attributes
+
+1. setup a cronjob that will  do the following:
+a) call the database <scheduler> model every 1hr.
+b). validate the scheduler time, with a preset time and timezone.
+2. trigger 
+
