@@ -1,0 +1,62 @@
+The backend will majorly consist of server actions.
+
+A. CLIENT PERMISSION AND ACCESS.
+
+<signup> (http):
+this server will give the user ability to add credentials to the db:
+1. collect client data
+2. add the data to the database
+3. create two tokens using the following process below
+a). "acessToken" signed by the JOSE <jwt> method
+b). "refreshToken" signed by the JOSE <jwt> method
+4. assign the both tokens to the client cookies, via the server cookies method, with some protection from script. 
+3. send response and response code back to the client
+
+</login> (http):
+this server will be responsible for login:
+1. collect client data
+2. validate the data with the database
+3. collect the client cookies values and do the following:
+a). "acessToken" signed by the JOSE <jwt> method
+b). "refreshToken" signed by the JOSE <jwt> method
+4. send response and response code back to the client
+
+
+<middleware>(http):
+this will be the first line of contact for the server to validate the client, IF client has cookies, it will allow, else it will redirect to "/"
+1. protect all the urls IF the following are not (true), and send the client back to the "/" url
+a). accessToken not found in client cookies
+b). refreshToken not found in client cookies
+2. if both "accesstoken" and "refreshToken" are available in the client cookies, do the following
+a). call an helper function to validate the client "accessToken", and if true, give client the access to the requested url path
+3. if only the refreshToken is available, do the following:
+a). redirect the call to ("api/refresh"), and this will do the "refrshToken" validation, and "accessToken" regeneration.
+
+<refreshToken>(http):
+this route will only be called by the middleware, when the client is trying to access the protected route, and the client dont have the "accesstoken" credentials
+1. this api will be called and given some data, and do the following with the data.
+a). calls an helper function that will do validate the data coming from the middleware call "refeshtoken".
+b). validate the token, and if true, call a jwt helper function to generarte a new "accessToken".
+c). return both the "acessToken" and the receiced "refreshToken", back to the middlware.
+2. return a response and response code back to the middlware  (3XX status code resopnse).
+
+
+
+B. CLIENT INTERACTIONS WITH THE APPLICATION
+
+<dashboard>(graphql):
+this api server will be responsible for data retrival from the db, with the following structure
+1. a <useEffect client> call to the graphql server that will return and expose the following data to the client
+a) total number of all emails in user db
+b) list of emails 
+c) list of smpts
+d) number of emails sent for the day
+e) list of industries 
+
+
+</credentials><http request (POST)>
+summary :This api server contains 4 major block, and each of them contribute to the effectivness of the application, and database interactions.
+each of them will speak to the database, some of them will either READ, WRITE, while some will be both.
+
+execution: the api will have some dynamic concept to the way they will be effective, which will bring us to the {action, data} types, whereby the action will be
+what action will be called, this will be the backbone of what method/function the api call, and the data will involve the process

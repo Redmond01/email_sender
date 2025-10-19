@@ -1,0 +1,90 @@
+
+user flow for the front-end will be like this
+
+1. user comes to the platform <signin || signup>
+2. user comes to the dashboard, and see how list of emails and other informations they are having
+3. user will have the ability to create industry and set schedule time, when emails will be sent to these industries
+4. user will be given the previledge to add the user email and credentials to the db.
+
+<signup>:
+user will provide the following details 
+1. list of emails
+2. schedule timeming and industry creation
+3. email template.
+
+details:
+
+list of emails:
+emails can be saved into the db via two ways, 
+a). the single email credentials, in which there will be field about what the emails will have, ranging from the 
+name, email address, industry etc.
+
+b). multiple credentials will come in a format of csv, where by there will be list of columns that will be 
+on the csv, and each row must have a complete column for each field they are, i.e all row must not ommit any 
+column, so as to make the emails good for processing.
+
+schedule:
+the user will have the ability to create the industries, and they will set them up, they wont be allowed to save 
+any credentials to the db, either by single or multiple credential savings, unless they create industry.
+user will be the one to set schedule on what time of the day will the emails will be sent, the timing will be
+sent to the backend for cron job to send the emails.
+
+email template:
+user will provide 2 intro emails to addresses, and at least 6 follow up emails for each industry.
+
+<dashbaord>
+user will be that have successfully logged in or signup, will end up redirected to a dashboard page, 
+whereby they will be given the visuals on how many emails they have, and other vital informations 
+about their profile.
+
+user sending credentials (user mail for sending emails):
+user will be given a ui to add email credentials they need to send emails through.
+
+_________________________________________________________________________________________________________________________________________________
+
+PROJECT STACK AND PROTOTYPING
+
+<client crud ability>
+the client will have the room for the following:
+1. ability to update the database
+2. ability to delete individual data from the database
+4. abliity to query the database
+5. ability to secure the whole backend system.
+6. ability to create schedule timer.
+
+<frontend stack>
+Things the client will need to do, and what stack will help to achive those
+1. login || signin
+2. paste data to backend <single || multiple>
+3. retrive data from db via backend
+4. update db data via the backend
+5. set schedule time
+
+Workflow and tools for that:
+
+url </><http request POST>
+1. the client will be able to login to the application, and will be given the ability to login, this will be done via http (Request and Response)
+a) login UI
+b) signp UI
+
+</dashboard><graphql request (GET)>
+2. the client will go into the dashboard, and all the data from the dashboard  be shwillown as follows
+a) user data list UI  (main UI)
+a) total number of all emails in user db
+b) list of emails
+c) list of smpts
+d) number of emails sent for the day
+e) list of industries
+
+</credentials><http request (POST)>
+1. the user will be able to make general crud activities with the database through this route.
+a) user will select between single credential update or multiple credential update
+b) user add credentials < single email detatils> UI
+c) user delete credentials <single email details> UI
+d) user will be able to update smtp credentials
+
+</schedule><http request (POST)>
+a). The user will have the opportunity to set and update the schedule timer for each time the email will be sent
+b). user will be able to update the timer, either delete, adjust etc
+
+
