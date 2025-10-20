@@ -86,5 +86,3 @@ d) user will be able to update smtp credentials
 </schedule><http request (POST)>
 a). The user will have the opportunity to set and update the schedule timer for each time the email will be sent
 b). user will be able to update the timer, either delete, adjust etc
-
-
