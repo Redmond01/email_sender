@@ -64,7 +64,27 @@ what action will be called, this will be the backbone of what method/function th
 
 plan: there will be a server called "credential", and this server will be of a POST http request, and it will collect object of the {action, data} request data,
 and it will have some switch statement, in which {actions} will be triggred in the switch statment, and the {data} will be passed to the logic that matches switch call.
-
+properties:{
+  id: String,                  // unique identifier
+  name: String,                // recipient's name
+  email: String,               // recipient email
+  companyName: String,         // optional
+  industry: String,            // used for targeting
+  userStatus: Boolean,         // still valid/active in campaign
+  emailValid: Boolean,         // passed verification
+  noOfEmailSent: Number,       // how many emails have been sent
+  isFirstMail: Boolean,        // true if first message not yet sent
+  nextFollowUpDate: Date,      // next allowed date to send (set by logic)
+  lastSentDate: Date,          // when last mail was sent
+  followUpCount: Number,       // how many follow-ups done so far
+  totalFollowUpsPlanned: Number, // e.g. 12 follow-ups max
+  assignedSmtpId: String,      // keeps consistency in sender
+  lastOpened: Date,            // optional (track engagement)
+  isResponded: Boolean,        // stops future follow-ups if true
+  isBounced: Boolean,          // skip if bounced
+  createdAt: Date,             // first time added
+  updatedAt: Date              // auto-updated each change
+}
 1. add single credential<POST>:
 this logic will recive and do the following:
 1. append the argument to the database
@@ -133,8 +153,19 @@ this are chain of logic that will be performed on the smtp model in the db.
 "smtp-cron" logic: this logic will will be a trigger that will update the "smtp" model in the db at 6am, here are the things that will be updated
 1.maxPerDay
 2.sentToday
-3.sessions
+3.sessions<array>
 4.sessionplan
 5.lastreset
 6.daystamp
 
+2. filterEmail:
+this logic will be the backbone of email phase, it will do the following.
+1. call the "email" model in the db, and pass into an array.
+2. filter out the email addresses that will receive email today.
+
+3. send emails (outreach)
+this logic will be responsible for the email outreach,and it will loop through the emails and the smtps, below are the rules it will follow
+1.pick out the emails that are valid for outreach for the day.
+2.pick out the smtps .
+3.loop through the emails, assign template id to what will be sent, and send out emails.
+4.trigger an email send to the email address with the 3 key things in place (assigned smtp, email template, address itself.)
